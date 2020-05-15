@@ -1,0 +1,8 @@
+.test {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+}
+div[data-id="something"] {
+  background-color: yellow;
+}

@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>JQuery Selectors</title>
+    <link rel="stylesheet" href="style.css" >
+  </head>
+  <body>
+    <!-- <div>
+      HelloWorld
+      <p>I am Ryan</p>
+      <p id="test">I am Simon</p>
+    </div> -->
+    <input type="text">
+    <div data-id="something">Hello World</div>
+    <button>Click Me</button>
+    <div class="test">JQuery Selectors</div>
+  </body>
+
+  <script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js">  </script>
+  <!--<script hsrc="./js/jquery.min.js">  </script>-->
+  <script type="text/javascript">
+  //$(document).ready(function(){
+  //  alert("Hello World!");
+  //});
+  $(document).ready(function(){
+    $('button').on('click', function(){
+      // alert($('div').html());
+      // alert($('input').val());
+      // $('input').val('I am Simon');
+      // $('div').html('<p>Hello</p><p>World</p>')
+      //$('div').removeAttr('data-id');
+      $('div').hide(1000);
+    });
+    $('.test').hide(1000).show(2000);
+  });
+  document.write("<br/>")
+  document.write("九九乘法表:")
+  document.write("<br/>")
+  document.write("<table border='1' bordercolor='#4DFFFF'>")
+  for (var i = 1; i <= 9; i++) {
+    document.write("<tr>")
+    for (var j = 1; j <= i; j++) {
+        document.write("<td>")
+      document.write(j+"*"+i+"="+j*i+"&nbsp;")
+        document.write("</td>")
+    }
+    //document.write("<br/>")
+    document.write("</tr>")
+  }
+  document.write("</table>")
+  function test() {
+    alert("Hello World!");
+  }
+  test();
+  </script>
+
+</html>

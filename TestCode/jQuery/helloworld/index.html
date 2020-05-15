@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>JQuery Intro</title>
+    <link rel="stylesheet" href="style.css" >
+  </head>
+  <body>
+    <button>Click Me</button>
+    <div class='test'></div>
+  </body>
+
+  <script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js">  </script>
+  <!--<script hsrc="./js/jquery.min.js">  </script>-->
+  <script type="text/javascript">
+  //$(document).ready(function(){
+  //  alert("Hello World!");
+  //});
+  $(document).ready(function(){
+    $('button').on('click', function(){
+      alert('hello world');
+    });
+    $('.test').hide(1000).show(2000);
+  });
+
+  </script>
+
+</html>

@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <title>JQuery Selectors</title>
+    <link rel="stylesheet" href="style.css" >
+  </head>
+  <body>
+  <!--
+    <h1>JQuery Selectors</h1>
+    <div class="test">JQuery Selectors</div>
+    <p id="test">JQuery Selectors</p>
+    <button>Click Me</button>
+  -->
+
+  <!--
+    <div class="test">test</div>
+    <div class="aa">
+      <div class="list">
+        <div class="test" id="first">1</div>
+        <div class="even">2</div>
+        <div >3</div>
+        <div class="even">4</div>
+        <div >5</div>
+      </div>
+    </div>
+  -->
+  <ul>
+    <li>0</li>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+  </ul>
+  <li>Test</li>
+    <button>Click Me</button>
+  </body>
+
+  <script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js">  </script>
+  <!--<script hsrc="./js/jquery.min.js">  </script>-->
+  <script type="text/javascript">
+  //$(document).ready(function(){
+  //  alert("Hello World!");
+  //});
+  $(document).ready(function(){
+    $('button').on('click', function(){
+      //$('div').css('backgroundColor', 'red');
+      //$('#test').css('backgroundColor', 'yellow');
+      //$('.test').css('backgroundColor', 'red');
+      //$('.test, #test, h1').css('backgroundColor', 'red');
+      //$('*').css('backgroundColor', 'red');
+      //
+      //$('div .test').css('backgroundColor', 'yellow');
+      //$('.list > .test').css('backgroundColor', 'yellow');
+      //$('.aa .test').css('backgroundColor', 'yellow');
+      //$('#first ~ div').css('backgroundColor', 'yellow');
+      //
+      //$('li:first').css('backgroundColor', 'yellow');
+      //$('li:not(li:first)').css('backgroundColor', 'yellow');
+      //$('li:not(ul li)').css('backgroundColor', 'yellow');
+      //$('li:even').css('backgroundColor', 'yellow');
+      //$('li:odd').css('backgroundColor', 'yellow');
+      $('li:eq(4)').css('backgroundColor', 'blue');
+      $('li:gt(4)').css('backgroundColor', 'yellow');
+      $('li:lt(4)').css('backgroundColor', 'red');
+      //alert('hello world');
+    });
+    //$('.test').hide(1000).show(2000);
+  });
+
+  </script>
+
+</html>

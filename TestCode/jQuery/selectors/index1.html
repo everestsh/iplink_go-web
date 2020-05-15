@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>JQuery Selectors</title>
+    <link rel="stylesheet" href="style.css" >
+  </head>
+  <body>
+    <div style="display:none">Hello Simon</div>
+    <div date-id="Hello">Hello</div>
+    <div date-id="World">World</div>
+    <div>HelloWorld</div>
+    <div>Maiziedu
+      <span> is awesome</span>
+    </div>
+    <div style="height:50px;width:50px;background-color:red;"></div>
+    <button>Click Me</button>
+  </body>
+
+  <script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js">  </script>
+  <!--<script hsrc="./js/jquery.min.js">  </script>-->
+  <script type="text/javascript">
+  //$(document).ready(function(){
+  //  alert("Hello World!");
+  //});
+  $(document).ready(function(){
+    $('button').on('click', function(){
+      // $('div:contains(edu)').css('backgroundColor', 'yellow');
+      // $('div:contains(awesome)').css('backgroundColor', 'yellow');
+      // $('div:empty').css('backgroundColor', 'yellow');
+      // $('div:has(span)').css('backgroundColor', 'yellow');
+      // $('div:parent').css('backgroundColor', 'yellow');
+      // $('div:hidden').css('display', 'block');
+      // $('div[date-id^=Wo]').css('backgroundColor', 'yellow');
+      $('div[date-id*=o]').css('backgroundColor', 'yellow');
+      //$('div:visible').css('display', 'none');
+      //alert('hello world');
+    });
+    //$('.test').hide(1000).show(2000);
+  });
+
+  </script>
+
+</html>

@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>JQuery Selectors</title>
+    <link rel="stylesheet" href="style.css" >
+  </head>
+  <body>
+    <!-- <input type="text"> -->
+    <!-- <input type="button" name="Click Me"> ???button 的input写法是什么？-->
+    <input disabled type="text" value="Hello">
+    <input  type="text" value="World">
+    <button>Click Me</button>
+  </body>
+
+  <script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js">  </script>
+  <!--<script hsrc="./js/jquery.min.js">  </script>-->
+  <script type="text/javascript">
+  //$(document).ready(function(){
+  //  alert("Hello World!");
+  //});
+  $(document).ready(function(){
+    $('button').on('click', function(){
+      // $(':input').css('backgroundColor', 'yellow');
+      // $(':text').css('backgroundColor', 'yellow');
+      // $(':button').css('backgroundColor', 'blue');
+      $(':text:disabled').css('backgroundColor', 'yellow');
+      $(':text:enabled').css('backgroundColor', '4DFFFF');
+      // alert('hello world');
+    });
+    //$('.test').hide(1000).show(2000);
+  });
+
+  </script>
+
+</html>
